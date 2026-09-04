@@ -1,0 +1,19 @@
+# Sensitive input datasets
+*.json
+
+# Extracted credential data
+emails.txt
+usernames.txt
+*_list.txt
+*_salted.txt
+plaintext_list.txt
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
