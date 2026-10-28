@@ -50,8 +50,17 @@ sudo apt install -y jq coreutils grep gawk sed
 # Make the script executable
 chmod +x parse-hashes.sh
 
-# Parse a JSON dataset
-./parse-hashes.sh example-domain-results.json
+# Create a global command
+sudo ln -s /opt/parse-hashes/parse-hashes.sh /usr/local/bin/parse-hashes
+
+# Verify the command is available
+which parse-hashes
+
+# Run from your CURRENT directory
+parse-hashes domain.com_leaklookup-results.json
+
+# Or run against a file anywhere in WSL2
+parse-hashes /mnt/c/Users
 ```
 
 ## Example Output
